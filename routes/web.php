@@ -15,6 +15,6 @@ Route::prefix('/hai')->group(function () {
     });
 });
 
-Route::get('vendor/{id}', function ($id) {
-    return 'hai vendor ' . $id;
+Route::get('vendor/{id}/{makan}', function ($id, $makan) {
+    return 'hai vendor ' . $id . ' makan ' . $makan;
 });
